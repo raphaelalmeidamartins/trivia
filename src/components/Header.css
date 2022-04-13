@@ -1,0 +1,30 @@
+.Header {
+  align-items: center;
+  background-color: var(--primary-color);
+  border-bottom: 3px solid var(--text-icons);
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.Header-user-profile {
+  align-items: center;
+  display: flex;
+  font-weight: 500;
+}
+
+.Header-user-profile img {
+  border-radius: 50%;
+  height: 35px;
+  margin-right: 1rem;
+  width: 35px;
+}
+
+.Header strong {
+  margin-right: 1rem;
+}

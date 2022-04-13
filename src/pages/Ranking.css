@@ -1,0 +1,70 @@
+.Ranking-container {
+  align-items: center;
+  background-image: var(--gradient-three);
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 2.5rem;
+}
+
+.Ranking-picture {
+  margin-bottom: 1rem;
+  object-fit: contain;
+  width: 300px;
+  z-index: 1;
+}
+
+.Ranking-noranking {
+  margin-bottom: 1rem;
+}
+
+.Ranking {
+  align-items: center;
+  background-color: var(--primary-color);
+  border: 3px solid var(--text-icons);
+  border-radius: var(--container-radius);
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 2.5rem;
+  z-index: 1;
+}
+
+.Ranking h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.Ranking ol {
+  margin-top: 1rem;
+}
+
+.Ranking button {
+  align-items: center;
+  background-color: var(--secondary-color-cyan);
+  border: 1px solid var(--text-icons);
+  border-radius: var(--input-buttons-radius);
+  color: var(--text-icons);
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.Ranking button span {
+  margin-left: 0.5rem;
+}
+
+.Ranking button:disabled {
+  opacity: 0.5;
+}
+
+.Ranking button:hover:not( :disabled ) {
+  filter: brightness(120%);
+}

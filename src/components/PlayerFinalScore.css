@@ -1,0 +1,12 @@
+.PlayerFinalScore {
+  width: 100%;
+}
+
+.PlayerFinalScore p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.PlayerFinalScore strong {
+  margin-right: 0.5rem;
+}

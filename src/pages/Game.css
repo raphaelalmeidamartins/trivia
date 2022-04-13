@@ -1,0 +1,17 @@
+.Game {
+  align-items: center;
+  background-image: var(--gradient-two);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.Game-background-forms {
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  width: 100vw;
+  z-index: 0;
+}
