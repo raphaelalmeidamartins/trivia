@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import rankingPic from '../assets/imgs/ranking.png';
 import wave from '../assets/imgs/wave.svg';
 import IndividualRanking from '../components/IndividualRanking';
-import { actionGetRanking, actionResetGame } from '../redux/actions';
+import { actionGetRanking, actionResetGame, actionResetPlayer } from '../redux/actions';
 import './Ranking.css';
 
 class Ranking extends Component {
@@ -14,8 +14,9 @@ class Ranking extends Component {
   }
 
   handleClick = () => {
-    const { resetGame, history } = this.props;
+    const { resetGame, resetPlayer, history } = this.props;
     resetGame();
+    resetPlayer()
     history.push('/');
   };
 
@@ -60,6 +61,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   getRanking: () => dispatch(actionGetRanking()),
   resetGame: () => dispatch(actionResetGame()),
+  resetPlayer: () => dispatch(actionResetPlayer()),
 });
 
 Ranking.propTypes = {

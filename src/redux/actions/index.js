@@ -10,6 +10,7 @@ const DECREASE_TIMER = 'DECREASE_TIMER';
 const FINAL_ROUND = 'FINAL_ROUND';
 const GET_RANKING = 'GET_RANKING';
 const RESET_GAME = 'RESET_GAME';
+const RESET_PLAYER = 'RESET_PLAYER';
 
 function actionGetQuestions(token) {
   return async (dispatch) => {
@@ -81,6 +82,12 @@ function actionResetGame() {
   };
 }
 
+function actionResetPlayer() {
+  return {
+    type: RESET_PLAYER,
+  }
+}
+
 export {
   actionGetToken,
   GET_TOKEN,
@@ -100,4 +107,6 @@ export {
   actionGetRanking,
   RESET_GAME,
   actionResetGame,
+  RESET_PLAYER,
+  actionResetPlayer,
 };

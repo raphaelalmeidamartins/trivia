@@ -1,11 +1,10 @@
-import { QUESTION_CHOSEN, RESET_GAME, UPDATE_PLAYER_DATA } from '../actions';
+import { QUESTION_CHOSEN, RESET_GAME, RESET_PLAYER, UPDATE_PLAYER_DATA } from '../actions';
 
 const INITIAL_STATE = {
   name: '',
   assertions: 0,
   score: 0,
   gravatarEmail: '',
-  avatar: '',
 };
 
 const player = (state = INITIAL_STATE, action) => {
@@ -23,6 +22,12 @@ const player = (state = INITIAL_STATE, action) => {
       assertions: state.assertions + action.assertion,
     };
   case RESET_GAME:
+    return {
+      ...state,
+      assertion: 0,
+      score: 0,
+    };
+  case RESET_PLAYER:
     return INITIAL_STATE;
   default:
     return state;
