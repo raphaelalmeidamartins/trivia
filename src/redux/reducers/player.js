@@ -2,7 +2,7 @@ import { QUESTION_CHOSEN, RESET_GAME, RESET_PLAYER, UPDATE_PLAYER_DATA } from '.
 
 const INITIAL_STATE = {
   name: '',
-  assertions: 0,
+  rightAnswers: 0,
   score: 0,
   gravatarEmail: '',
 };
@@ -19,12 +19,12 @@ const player = (state = INITIAL_STATE, action) => {
     return {
       ...state,
       score: state.score + action.score,
-      assertions: state.assertions + action.assertion,
+      rightAnswers: state.assertions + action.rightAnswers,
     };
   case RESET_GAME:
     return {
       ...state,
-      assertion: 0,
+      rightAnswers: 0,
       score: 0,
     };
   case RESET_PLAYER:

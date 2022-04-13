@@ -45,7 +45,7 @@ function actionQuestionChosen(score) {
   return {
     type: QUESTION_CHOSEN,
     score,
-    assertion: score > 0 ? 1 : 0,
+    rightAnswers: score > 0 ? 1 : 0,
   };
 }
 
