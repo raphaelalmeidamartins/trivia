@@ -4,6 +4,7 @@ import './AnimatedForms.css';
 function AnimatedForms() {
   return (
     <svg
+      className="Forms"
       xmlns="http://www.w3.org/2000/svg"
       width="1440"
       height="560"

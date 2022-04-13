@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-import forms from '../assets/imgs/AnimatedForms';
+import AnimatedForms from '../assets/imgs/AnimatedForms';
 import Header from '../components/Header';
 import Question from '../components/Question';
 import './Game.css';
@@ -23,7 +23,7 @@ class Game extends Component {
 
     return (
       <main className="Game">
-        <img className="Game-background-forms" src={ forms } alt="" />
+        <AnimatedForms />
         { playerName === '' && <Redirect to="/" /> }
         <Header history={ history } isGameScreen />
         <Question

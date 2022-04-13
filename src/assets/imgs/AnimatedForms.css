@@ -1,3 +1,11 @@
+.Forms {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  z-index: 0;
+}
+
 @keyframes float1 {
   0% {
     transform: translate(0, 0)
