@@ -4,6 +4,7 @@
 
 .Question {
   @include box(strech);
+  max-width: 90vw;
   transition: 400ms;
   width: 600px;
   z-index: 1;

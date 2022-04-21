@@ -22,4 +22,11 @@
   width: 100vw;
   z-index: 0;
 }
+
+@media screen and (max-height: 800px) {
+  .Game {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+}
 /*# sourceMappingURL=Game.css.map */

@@ -8,6 +8,10 @@
   justify-content: center;
   min-height: 100vh;
   min-width: 100vw;
+
+  .LoginForm {
+    margin-left: 4rem;
+  }
 }
 
 .Login-picture-container {
@@ -37,4 +41,16 @@
   transform: rotate(180deg);
   width: 100%;
   z-index: 0;
+}
+
+@media screen and (max-width: 1170px) {
+  .Login {
+    .LoginForm {
+      margin-left: 0;
+    }
+  }
+
+  .Login-picture-container {
+    display: none;
+  }
 }

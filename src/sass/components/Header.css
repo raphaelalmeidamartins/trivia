@@ -15,7 +15,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
 }
 
 .Header strong {
@@ -37,5 +37,11 @@
   height: 35px;
   margin-right: 1rem;
   width: 35px;
+}
+
+@media screen and (max-width: 540px) {
+  .Header-user-profile {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Header.css.map */

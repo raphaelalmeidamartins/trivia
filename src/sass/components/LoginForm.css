@@ -13,7 +13,6 @@
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   padding: 2.5rem;
-  margin-left: 4rem;
   z-index: 1;
 }
 

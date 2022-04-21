@@ -15,6 +15,10 @@
   min-width: 100vw;
 }
 
+.Login .LoginForm {
+  margin-left: 4rem;
+}
+
 .Login-picture-container {
   height: 700px;
   padding: 3rem;
@@ -44,5 +48,14 @@
           transform: rotate(180deg);
   width: 100%;
   z-index: 0;
+}
+
+@media screen and (max-width: 1170px) {
+  .Login .LoginForm {
+    margin-left: 0;
+  }
+  .Login-picture-container {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Login.css.map */

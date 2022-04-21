@@ -13,6 +13,7 @@
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   padding: 2.5rem;
+  max-width: 90vw;
   -webkit-transition: 400ms;
   transition: 400ms;
   width: 600px;
