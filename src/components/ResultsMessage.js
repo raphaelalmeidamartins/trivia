@@ -30,7 +30,7 @@ const mapStateToProps = ({ player: { rightAnswers } }) => ({
 });
 
 ResultsMessage.propTypes = {
-  assertions: PropTypes.number.isRequired,
+  rightAnswers: PropTypes.number.isRequired,
 };
 
 export default connect(mapStateToProps, null)(ResultsMessage);

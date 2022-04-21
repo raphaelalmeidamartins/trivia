@@ -9,7 +9,7 @@ const getQuestions = async (token) => {
   const question = await response.json();
   const errorCode = 3;
   if (question.response_code === errorCode) {
-    throw new Error(`Erro ${errorCode}: token inválido, seu token expirou.`);
+    return false;
   }
   return question.results;
 };

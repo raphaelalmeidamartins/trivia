@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import trivia from '../assets/imgs/trivia.png';
 import {
-  actionGetQuestions,
   actionGetToken,
   actionUpdatePlayerData
 } from '../redux/actions';
@@ -100,7 +99,6 @@ class LoginForm extends Component {
 const mapDispatchToProps = (dispatch) => ({
   requestToken: () => dispatch(actionGetToken()),
   updatePlayerDate: (state) => dispatch(actionUpdatePlayerData(state)),
-  requestQuestions: (token) => dispatch(actionGetQuestions(token)),
 });
 
 LoginForm.propTypes = {

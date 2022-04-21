@@ -6,8 +6,14 @@ import AnimatedForms from '../assets/imgs/AnimatedForms';
 import Header from '../components/Header';
 import Question from '../components/Question';
 import '../sass/pages/Game.css';
+import { actionGetToken } from '../redux/actions';
 
 class Game extends Component {
+  componentDidMount() {
+    const { questions, requestToken } = this.props;
+    if (!questions) requestToken();
+  }
+
   shuffleAnswers = (currQuestion) => {
     if (currQuestion) {
       const shuffle = 0.5;
@@ -41,11 +47,18 @@ const mapStateToProps = (state) => ({
   playerName: state.player.name,
 });
 
+const mapDispatchToProps = (dispatch) => ({
+  requestToken: () => dispatch(actionGetToken()),
+});
+
 Game.propTypes = {
-  questions: PropTypes.arrayOf(PropTypes.object).isRequired,
+  questions: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.object),
+    PropTypes.bool,
+  ]).isRequired,
   currRound: PropTypes.number.isRequired,
   playerName: PropTypes.string.isRequired,
   history: PropTypes.objectOf(PropTypes.any).isRequired,
 };
 
-export default connect(mapStateToProps, null)(Game);
+export default connect(mapStateToProps, mapDispatchToProps)(Game);

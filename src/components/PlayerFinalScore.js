@@ -28,7 +28,7 @@ const mapStateToProps = ({ player: { rightAnswers, score } }) => ({
 });
 
 PlayerFinalScore.propTypes = {
-  assertions: PropTypes.number.isRequired,
+  rightAnswers: PropTypes.number.isRequired,
   score: PropTypes.number.isRequired,
 };
 
