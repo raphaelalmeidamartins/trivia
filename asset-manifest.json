@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/trivia/static/css/main.f75eca25.css",
-    "main.js": "/trivia/static/js/main.201809b4.js",
+    "main.css": "/trivia/static/css/main.3b312d95.css",
+    "main.js": "/trivia/static/js/main.238847db.js",
     "static/media/loading-bubble.gif": "/trivia/static/media/loading-bubble.5fa1fce2713a8ea92bf6.gif",
+    "static/media/error404.png": "/trivia/static/media/error404.e61f2dd093ea0852f31d.png",
     "static/media/controller.png": "/trivia/static/media/controller.5e79bdabc0ae6fff5a2d.png",
     "static/media/win.png": "/trivia/static/media/win.80ea7f07a0e8a6dbf911.png",
     "static/media/ranking.png": "/trivia/static/media/ranking.0aa0ecc9e26717b37f37.png",
@@ -10,11 +11,11 @@
     "static/media/trivia.png": "/trivia/static/media/trivia.7e9181d35c0b06d5abc0.png",
     "index.html": "/trivia/index.html",
     "static/media/wave.svg": "/trivia/static/media/wave.0ab11fd89273a65248d58eaf858134a0.svg",
-    "main.f75eca25.css.map": "/trivia/static/css/main.f75eca25.css.map",
-    "main.201809b4.js.map": "/trivia/static/js/main.201809b4.js.map"
+    "main.3b312d95.css.map": "/trivia/static/css/main.3b312d95.css.map",
+    "main.238847db.js.map": "/trivia/static/js/main.238847db.js.map"
   },
   "entrypoints": [
-    "static/css/main.f75eca25.css",
-    "static/js/main.201809b4.js"
+    "static/css/main.3b312d95.css",
+    "static/js/main.238847db.js"
   ]
 }
