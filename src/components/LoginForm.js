@@ -10,7 +10,7 @@ import {
   actionGetToken,
   actionUpdatePlayerData
 } from '../redux/actions';
-import './LoginForm.css';
+import '../sass/components/LoginForm.css';
 import SettingsButton from './SettingsButton';
 
 class LoginForm extends Component {

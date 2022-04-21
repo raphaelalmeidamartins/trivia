@@ -3,7 +3,7 @@ import md5 from 'crypto-js/md5';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import NextButton from './NextButton';
-import './Header.css';
+import '../sass/components/Header.css';
 
 class Header extends Component {
   render() {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Settings.css';
+import '../sass/pages/Settings.css';
 
 class Settings extends Component {
   render() {

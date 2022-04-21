@@ -1,0 +1,93 @@
+.LoginForm {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: 3px solid #131313;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  padding: 2.5rem;
+  margin-left: 4rem;
+  z-index: 1;
+}
+
+.LoginForm h1 {
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.LoginForm input {
+  background-color: white;
+  border: 1px solid #13131348;
+  border-radius: 0.6rem;
+  color: #131313;
+  font-family: Play , sans-serif;
+  font-size: 1rem;
+  padding: 0.8rem 1.2rem 0.8rem 2.5rem;
+}
+
+.LoginForm label {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.LoginForm button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #efc82c;
+  border: 1px solid #131313;
+  border-radius: 0.6rem;
+  color: #131313;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.LoginForm button:disabled {
+  opacity: 0.5;
+}
+
+.LoginForm button:hover:not(:disabled) {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.LoginForm-logo {
+  margin-bottom: 2rem;
+  width: 200px;
+}
+
+.LoginForm-icon {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #13131348;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0.8rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+/*# sourceMappingURL=LoginForm.css.map */

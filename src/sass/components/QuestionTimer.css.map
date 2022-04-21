@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,cAAc,CAAC;EAEb,WAAW,EAAE,MAAM;EACnB,gBAAgB,EAAE,WAAW;EAC7B,MAAM,EAAE,GAAG,CAAC,KAAK,CAAC,YAAgB;EAClC,aAAa,EAAE,WAA0B;EACzC,KAAK,EAAE,YAAgB;EACvB,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,MAAM;EACvB,OAAO,EAAE,aAAa;EACtB,UAAU,EAAE,MAAM;EAClB,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "QuestionTimer.scss",
+        "../abstracts/_colors.scss",
+        "../abstracts/_radius.scss"
+    ],
+    "names": [],
+    "file": "QuestionTimer.css"
+}

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { actionFinalRound, actionNextRound } from '../redux/actions';
 import QuestionTimer from './QuestionTimer';
-import './NextButton.css';
+import '../sass/components/NextButton.css';
 
 class NextButton extends Component {
   handleClick = () => {

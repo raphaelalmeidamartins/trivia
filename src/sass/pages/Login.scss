@@ -1,6 +1,8 @@
+@import '../abstracts/gradients';
+
 .Login {
   align-items: center;
-  background-image: var(--gradient-one);
+  background-image: $gradient-one;
   background-size: cover;
   display: flex;
   justify-content: center;

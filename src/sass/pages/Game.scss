@@ -1,6 +1,8 @@
+@import '../abstracts/gradients';
+
 .Game {
   align-items: center;
-  background-image: var(--gradient-two);
+  background-image: $gradient-two;
   background-size: cover;
   display: flex;
   justify-content: center;

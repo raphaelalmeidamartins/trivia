@@ -1,0 +1,85 @@
+.Question {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: 3px solid #131313;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  padding: 2.5rem;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  width: 600px;
+  z-index: 1;
+}
+
+.Question h1 {
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.Question p {
+  margin-bottom: 1rem;
+}
+
+.Question ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.Question-loading-bubble {
+  height: 200px;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.Question-option {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #efc82c;
+  border: 1px solid #131313;
+  border-radius: 0.6rem;
+  color: #131313;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.Question-option:disabled {
+  opacity: 0.5;
+}
+
+.Question-option:hover:not(:disabled) {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.Question-wrong {
+  background-color: #ef1290;
+}
+
+.Question-right {
+  background-color: #00bfc3;
+}
+/*# sourceMappingURL=Question.css.map */

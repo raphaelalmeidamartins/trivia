@@ -1,0 +1,6 @@
+@import '../abstracts/_colors';
+@import '../abstracts/_mixins';
+
+.NextButton {
+  @include button($secondary-color-cyan, 0, 77px);
+}

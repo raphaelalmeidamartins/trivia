@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import loadingBubble from '../assets/imgs/loading-bubble.gif';
 import { actionQuestionChosen } from '../redux/actions';
-import './Question.css';
+import '../sass/components/Question.css';
 
 class Question extends Component {
   handleHighlightQuestions = (correctAnswer, currAnswer) => {

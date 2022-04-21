@@ -1,0 +1,31 @@
+@import '../abstracts/_colors';
+@import '../abstracts/_radius';
+
+.ResultsMessage {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+
+  p {
+    background-color: $primary-color-transparent;
+    border-radius: $input-buttons-radius;
+    color: $text-icons;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0.5rem;
+  }
+}
+
+.ResultsMessage-picture-container {
+  height: 250px;
+  padding: 2rem;
+  width: 250px;
+
+  img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+  }
+}

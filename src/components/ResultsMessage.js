@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import won from '../assets/imgs/win.png';
 import lose from '../assets/imgs/lose.png';
-import './ResultsMessage.css';
+import '../sass/components/ResultsMessage.css';
 
 class ResultsMessage extends Component {
   render() {

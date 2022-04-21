@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { actionDecreaseTimer, actionQuestionChosen } from '../redux/actions';
-import './QuestionTimer.css';
+import '../sass/components/QuestionTimer.css';
 
 class QuestionTimer extends Component {
   componentDidMount() {

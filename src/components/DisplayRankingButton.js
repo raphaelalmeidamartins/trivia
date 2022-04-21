@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import './DisplayRankingButton.css';
+import '../sass/components/DisplayRankingButton.css';
 
 class DisplayRankingButton extends Component {
   handleClick = () => {

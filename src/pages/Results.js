@@ -8,7 +8,7 @@ import Header from '../components/Header';
 import PlayAgainButton from '../components/PlayAgainButton';
 import PlayerFinalScore from '../components/PlayerFinalScore';
 import ResultsMessage from '../components/ResultsMessage';
-import './Results.css';
+import '../sass/pages/Results.css';
 
 class Results extends Component {
   render() {

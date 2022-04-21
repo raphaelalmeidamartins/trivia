@@ -1,0 +1,18 @@
+@import '../abstracts/mixins';
+
+.Results {
+  align-items: center;
+  background-image: var(--gradient-one);
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.Results-info {
+  @include box;
+  width: 300px;
+  z-index: 1;
+}

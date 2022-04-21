@@ -5,7 +5,7 @@ import { Redirect } from 'react-router-dom';
 import AnimatedForms from '../assets/imgs/AnimatedForms';
 import Header from '../components/Header';
 import Question from '../components/Question';
-import './Game.css';
+import '../sass/pages/Game.css';
 
 class Game extends Component {
   shuffleAnswers = (currQuestion) => {

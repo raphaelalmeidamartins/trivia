@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EAChB,KAAK,EAAE,IAAI;CAUZ;;AAXD,AAGE,iBAHe,CAGf,CAAC,CAAC;EACA,SAAS,EAAE,MAAM;EACjB,aAAa,EAAE,IAAI;CACpB;;AANH,AAQE,iBARe,CAQf,MAAM,CAAC;EACL,YAAY,EAAE,MAAM;CACrB",
+    "sources": [
+        "PlayerFinalScore.scss"
+    ],
+    "names": [],
+    "file": "PlayerFinalScore.css"
+}

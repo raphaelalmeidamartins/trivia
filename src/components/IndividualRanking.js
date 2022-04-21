@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import './IndividualRanking.css';
+import '../sass/components/IndividualRanking.css';
 
 class IndividualRanking extends Component {
   render() {

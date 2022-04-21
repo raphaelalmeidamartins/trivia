@@ -1,0 +1,6 @@
+@import '../abstracts/_colors';
+@import '../abstracts/_mixins';
+
+.DisplayRankingButton {
+  @include button($accent-color, 1rem, 100%);
+}

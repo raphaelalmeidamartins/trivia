@@ -5,7 +5,7 @@ import rankingPic from '../assets/imgs/ranking.png';
 import wave from '../assets/imgs/wave.svg';
 import IndividualRanking from '../components/IndividualRanking';
 import { actionGetRanking, actionResetGame, actionResetPlayer } from '../redux/actions';
-import './Ranking.css';
+import '../sass/pages/Ranking.css';
 
 class Ranking extends Component {
   componentDidMount() {

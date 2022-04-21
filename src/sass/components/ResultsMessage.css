@@ -1,0 +1,39 @@
+.ResultsMessage {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.ResultsMessage p {
+  background-color: rgba(255, 255, 255, 0.346);
+  border-radius: 0.6rem;
+  color: #131313;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+.ResultsMessage-picture-container {
+  height: 250px;
+  padding: 2rem;
+  width: 250px;
+}
+
+.ResultsMessage-picture-container img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+/*# sourceMappingURL=ResultsMessage.css.map */

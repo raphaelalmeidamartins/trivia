@@ -1,0 +1,48 @@
+.Login {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#3d24aa), color-stop(#6f1ca9), color-stop(#9411a6), color-stop(#b303a1), color-stop(#cf009b), to(#d93aa9));
+  background-image: linear-gradient(to right top, #3d24aa, #6f1ca9, #9411a6, #b303a1, #cf009b, #d93aa9);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.Login-picture-container {
+  height: 700px;
+  padding: 3rem;
+  width: 700px;
+}
+
+.Login-picture-container img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+.Login-wave {
+  bottom: 0;
+  opacity: 0.8;
+  position: fixed;
+  width: 100%;
+  z-index: 0;
+}
+
+.Login-wave-upsidedown {
+  opacity: 0.2;
+  position: fixed;
+  top: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 100%;
+  z-index: 0;
+}
+/*# sourceMappingURL=Login.css.map */

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import './PlayerFinalScore.css';
+import '../sass/components/PlayerFinalScore.css';
 
 class PlayerFinalScore extends Component {
   render() {

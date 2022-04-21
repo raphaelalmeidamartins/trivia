@@ -1,0 +1,36 @@
+@import '../abstracts/_colors';
+@import './radius';
+
+@mixin button($color, $margin-top, $width) {
+  align-items: center;
+  background-color: $color;
+  border: 1px solid $text-icons;
+  border-radius: $input-buttons-radius;
+  color: $text-icons;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  margin-top: $margin-top;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  width: $width;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &:hover:not(:disabled) {
+    filter: brightness(120%);
+  }
+}
+
+@mixin box {
+  align-items: center;
+  background-color: $primary-color;
+  border: 3px solid $text-icons;
+  border-radius: $container-radius;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 2.5rem;
+}

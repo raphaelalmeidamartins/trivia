@@ -1,0 +1,42 @@
+@import '../abstracts/_colors';
+@import '../abstracts/_radius';
+@import '../abstracts/_mixins';
+
+.Question {
+  @include box;
+  transition: 400ms;
+  width: 600px;
+  z-index: 1;
+
+  h1 {
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}
+
+.Question-loading-bubble {
+  height: 200px;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.Question-option {
+  @include button($accent-color, 1rem, 100%);
+}
+
+.Question-wrong {
+  background-color: $secondary-color-pink;
+}
+
+.Question-right {
+  background-color: $secondary-color-cyan;
+}

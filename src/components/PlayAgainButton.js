@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
-import './PlayAgainButton.css';
+import '../sass/components/PlayAgainButton.css';
 import { actionResetGame, actionGetToken } from '../redux/actions';
 
 class PlayAgainButton extends React.Component {
