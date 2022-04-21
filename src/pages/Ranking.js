@@ -3,8 +3,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import rankingPic from '../assets/imgs/ranking.png';
 import wave from '../assets/imgs/wave.svg';
+import HomeButton from '../components/HomeButton';
 import IndividualRanking from '../components/IndividualRanking';
-import { actionGetRanking, actionResetGame, actionResetPlayer } from '../redux/actions';
+import { actionGetRanking } from '../redux/actions';
 import '../sass/pages/Ranking.css';
 
 class Ranking extends Component {
@@ -13,15 +14,8 @@ class Ranking extends Component {
     getRanking();
   }
 
-  handleClick = () => {
-    const { resetGame, resetPlayer, history } = this.props;
-    resetGame();
-    resetPlayer()
-    history.push('/');
-  };
-
   render() {
-    const { ranking } = this.props;
+    const { ranking, history } = this.props;
     return (
       <div className="Ranking-container">
         <img className="Ranking-picture" src={ rankingPic } alt="Ranking" />
@@ -39,13 +33,7 @@ class Ranking extends Component {
                 ))}
             </ol>
           )}
-          <button
-            type="button"
-            data-testid="btn-go-home"
-            onClick={ this.handleClick }
-          >
-            Home
-          </button>
+          <HomeButton history={ history } />
         </section>
         <img className="Login-wave" src={ wave } alt="" />
         <img className="Login-wave-upsidedown" src={ wave } alt="" />
@@ -60,13 +48,10 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   getRanking: () => dispatch(actionGetRanking()),
-  resetGame: () => dispatch(actionResetGame()),
-  resetPlayer: () => dispatch(actionResetPlayer()),
 });
 
 Ranking.propTypes = {
   getRanking: PropTypes.func,
-  resetGame: PropTypes.func,
   ranking: PropTypes.arrayOf(PropTypes.any),
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,

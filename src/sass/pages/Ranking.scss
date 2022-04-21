@@ -36,12 +36,4 @@
   ol {
     margin-top: 1rem;
   }
-
-  button {
-    @include button($secondary-color-cyan, 1rem, 100%);
-
-    span {
-      margin-left: 0.5rem;
-    }
-  }
 }

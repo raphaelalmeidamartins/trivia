@@ -58,39 +58,4 @@
 .Ranking ol {
   margin-top: 1rem;
 }
-
-.Ranking button {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #00bfc3;
-  border: 1px solid #131313;
-  border-radius: 0.6rem;
-  color: #131313;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 1rem;
-  padding: 0.8rem 1.2rem;
-  text-align: center;
-  width: 100%;
-}
-
-.Ranking button:disabled {
-  opacity: 0.5;
-}
-
-.Ranking button:hover:not(:disabled) {
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
-}
-
-.Ranking button span {
-  margin-left: 0.5rem;
-}
 /*# sourceMappingURL=Ranking.css.map */

@@ -13,7 +13,7 @@
 }
 
 .Results-info {
-  @include box;
+  @include box(strech);
   width: 300px;
   z-index: 1;
 }

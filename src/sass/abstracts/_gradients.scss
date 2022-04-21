@@ -7,9 +7,21 @@ $gradient-one: linear-gradient(
   #cf009b,
   #d93aa9
 );
+
 $gradient-two: linear-gradient(
   45deg,
   rgba(5, 138, 179, 1) 57%,
   rgba(0, 255, 250, 1) 100%
 );
+
 $gradient-three: linear-gradient(to right, #3ac02b, #44ad9b);
+
+$gradient-four: linear-gradient(
+  to right top,
+  #aa2424,
+  #a91c1c,
+  #a62f11,
+  #b35b03,
+  #cf6b00,
+  #d9873a
+);
