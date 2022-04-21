@@ -12,7 +12,7 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  height: 100vh;
+  min-height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -36,5 +36,12 @@
   padding: 2.5rem;
   width: 300px;
   z-index: 1;
+}
+
+@media screen and (max-height: 800px) {
+  .Results {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
 }
 /*# sourceMappingURL=Results.css.map */

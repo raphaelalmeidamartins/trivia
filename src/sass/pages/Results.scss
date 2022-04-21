@@ -7,7 +7,7 @@
   background-size: cover;
   display: flex;
   flex-flow: column nowrap;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   width: 100vw;
 }
@@ -16,4 +16,11 @@
   @include box(strech);
   width: 300px;
   z-index: 1;
+}
+
+@media screen and (max-height: 800px) {
+  .Results {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
 }

@@ -8,11 +8,13 @@ import '../sass/components/Header.css';
 class Header extends Component {
   render() {
     const { name, score, gravatarEmail, isGameScreen, history } = this.props;
+    const maxDisplayLenght = 12;
+
     return (
       <header className="Header">
         <div className="Header-user-profile">
           <img src={ `https://www.gravatar.com/avatar/${md5(gravatarEmail).toString()}` } data-testid="header-profile-picture" alt="avatar" />
-          <span data-testid="header-player-name">{ name }</span>
+          <span data-testid="header-player-name">{ name.slice(0, maxDisplayLenght) }</span>
         </div>
         <div>
           <strong>Score:</strong>

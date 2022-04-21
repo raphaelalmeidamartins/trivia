@@ -47,6 +47,7 @@
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   padding: 2.5rem;
+  max-width: 90vw;
   z-index: 1;
 }
 
@@ -57,5 +58,12 @@
 
 .Ranking ol {
   margin-top: 1rem;
+}
+
+@media screen and (max-height: 800px) {
+  .Ranking-container {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
 }
 /*# sourceMappingURL=Ranking.css.map */

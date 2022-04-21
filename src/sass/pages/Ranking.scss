@@ -16,6 +16,7 @@
 .Ranking-picture {
   margin-bottom: 1rem;
   object-fit: contain;
+
   width: 300px;
   z-index: 1;
 }
@@ -26,6 +27,7 @@
 
 .Ranking {
   @include box(center);
+  max-width: 90vw;
   z-index: 1;
 
   h1 {
@@ -35,5 +37,12 @@
 
   ol {
     margin-top: 1rem;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .Ranking-container {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
   }
 }
