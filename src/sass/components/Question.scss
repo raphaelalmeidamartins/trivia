@@ -3,7 +3,7 @@
 @import '../abstracts/_mixins';
 
 .Question {
-  @include box;
+  @include box(strech);
   transition: 400ms;
   width: 600px;
   z-index: 1;

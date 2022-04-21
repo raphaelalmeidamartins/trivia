@@ -2,7 +2,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: var(--gradient-one);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#3d24aa), color-stop(#6f1ca9), color-stop(#9411a6), color-stop(#b303a1), color-stop(#cf009b), to(#d93aa9));
+  background-image: linear-gradient(to right top, #3d24aa, #6f1ca9, #9411a6, #b303a1, #cf009b, #d93aa9);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;

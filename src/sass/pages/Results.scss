@@ -1,8 +1,9 @@
-@import '../abstracts/mixins';
+@import '../abstracts/_mixins';
+@import '../abstracts/_gradients';
 
 .Results {
   align-items: center;
-  background-image: var(--gradient-one);
+  background-image: $gradient-one;
   background-size: cover;
   display: flex;
   flex-flow: column nowrap;

@@ -1,5 +1,5 @@
-@import '../abstracts/gradients';
-@import '../abstracts/mixins';
+@import '../abstracts/_gradients';
+@import '../abstracts/_mixins';
 
 .Ranking-container {
   align-items: center;
@@ -25,7 +25,7 @@
 }
 
 .Ranking {
-  @include box;
+  @include box(center);
   z-index: 1;
 
   h1 {

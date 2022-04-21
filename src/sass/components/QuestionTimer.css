@@ -3,9 +3,10 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: transparent;
-  border: 1px solid var(#131313);
-  border-radius: var(0.6rem);
-  color: var(#131313);
+  border: 1px solid #131313;
+  border-radius: 0.6rem;
+  color: #131313;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,8 +14,18 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 0;
   padding: 0.8rem 1.2rem;
   text-align: center;
   width: 77px;
+}
+
+.QuestionTimer:disabled {
+  opacity: 0.5;
+}
+
+.QuestionTimer:hover:not(:disabled) {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 /*# sourceMappingURL=QuestionTimer.css.map */

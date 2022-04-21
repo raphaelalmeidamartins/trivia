@@ -1,5 +1,5 @@
 @import '../abstracts/_colors';
-@import './radius';
+@import './_radius';
 
 @mixin button($color, $margin-top, $width) {
   align-items: center;
@@ -25,8 +25,8 @@
   }
 }
 
-@mixin box {
-  align-items: center;
+@mixin box($align) {
+  align-items: $align;
   background-color: $primary-color;
   border: 3px solid $text-icons;
   border-radius: $container-radius;

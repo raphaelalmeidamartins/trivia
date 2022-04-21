@@ -1,5 +1,4 @@
-@import '../abstracts/_colors';
-@import '../abstracts/_radius';
+@import '../abstracts/_mixins';
 
 .QuestionTimer {
   @include button(transparent, 0, 77px);
