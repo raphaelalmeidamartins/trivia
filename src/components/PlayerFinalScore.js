@@ -5,7 +5,7 @@ import '../sass/components/PlayerFinalScore.css';
 
 class PlayerFinalScore extends Component {
   render() {
-    const { assertions, score } = this.props;
+    const { rightAnswers, score } = this.props;
 
     return (
       <section className="PlayerFinalScore">
@@ -15,15 +15,15 @@ class PlayerFinalScore extends Component {
         </p>
         <p>
           <strong>Right answers:</strong>
-          <span data-testid="feedback-total-question">{ assertions }</span>
+          <span data-testid="feedback-total-question">{ rightAnswers }</span>
         </p>
       </section>
     );
   }
 }
 
-const mapStateToProps = ({ player: { assertions, score } }) => ({
-  assertions,
+const mapStateToProps = ({ player: { rightAnswers, score } }) => ({
+  rightAnswers,
   score,
 });
 

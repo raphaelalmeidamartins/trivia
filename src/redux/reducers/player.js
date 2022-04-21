@@ -19,7 +19,7 @@ const player = (state = INITIAL_STATE, action) => {
     return {
       ...state,
       score: state.score + action.score,
-      rightAnswers: state.assertions + action.rightAnswers,
+      rightAnswers: state.rightAnswers + action.rightAnswers,
     };
   case RESET_GAME:
     return {

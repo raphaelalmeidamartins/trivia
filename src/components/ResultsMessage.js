@@ -7,26 +7,26 @@ import '../sass/components/ResultsMessage.css';
 
 class ResultsMessage extends Component {
   render() {
-    const { assertions } = this.props;
+    const { rightAnswers } = this.props;
     const minRightAnswers = 3;
 
     return (
       <section className="ResultsMessage" data-testid="feedback-text">
         <div className="ResultsMessage-picture-container">
-          {assertions >= minRightAnswers ? (
+          {rightAnswers >= minRightAnswers ? (
             <img src={ won } alt="You won" />
           ) : (
             <img src={ lose } alt="" />
           )}
         </div>
-        <p>{assertions >= minRightAnswers ? 'Well Done!' : 'Could be better...'}</p>
+        <p>{rightAnswers >= minRightAnswers ? 'Well Done!' : 'Could be better...'}</p>
       </section>
     );
   }
 }
 
-const mapStateToProps = ({ player: { assertions } }) => ({
-  assertions,
+const mapStateToProps = ({ player: { rightAnswers } }) => ({
+  rightAnswers,
 });
 
 ResultsMessage.propTypes = {
