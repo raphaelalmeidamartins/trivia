@@ -22,6 +22,12 @@
   margin-right: 1rem;
 }
 
+.Header .Header-buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .Header-user-profile {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -39,9 +45,80 @@
   width: 35px;
 }
 
+.Header-settingsicon {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #efc82c;
+  border: 1px solid #131313;
+  border-radius: 0.6rem;
+  color: #131313;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 1rem;
+}
+
+.Header-settingsicon:disabled {
+  opacity: 0.5;
+}
+
+.Header-settingsicon:hover:not(:disabled) {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
 @media screen and (max-width: 540px) {
   .Header-user-profile {
     display: none;
+  }
+  .Score-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: transparent;
+    border: 1px solid #131313;
+    border-radius: 0.6rem;
+    color: #131313;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0;
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 1rem;
+  }
+  .Score-container:disabled {
+    opacity: 0.5;
+  }
+  .Score-container:hover:not(:disabled) {
+    -webkit-filter: brightness(120%);
+            filter: brightness(120%);
   }
 }
 /*# sourceMappingURL=Header.css.map */

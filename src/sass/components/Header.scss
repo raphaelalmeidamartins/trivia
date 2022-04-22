@@ -1,4 +1,5 @@
-@import '../abstracts/_colors';
+@import "../abstracts/_colors";
+@import "../abstracts/_mixins";
 
 .Header {
   align-items: center;
@@ -15,7 +16,11 @@
 
   strong {
     margin-right: 1rem;
-  }  
+  }
+
+  .Header-buttons-container {
+    display: flex;
+  }
 }
 
 .Header-user-profile {
@@ -31,8 +36,20 @@
   }
 }
 
+.Header-settingsicon {
+  @include button($accent-color, 0, fit-content);
+  margin-left: 1rem;
+}
+
 @media screen and (max-width: 540px) {
   .Header-user-profile {
     display: none;
+  }
+
+  .Score-container {
+    @include button(transparent, 0, fit-content);
+    flex-grow: 2;
+    justify-content: space-between;
+    margin-right: 1rem;
   }
 }

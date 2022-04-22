@@ -3,6 +3,7 @@ import md5 from 'crypto-js/md5';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import NextButton from './NextButton';
+import { RiSettings4Fill } from 'react-icons/ri';
 import '../sass/components/Header.css';
 
 class Header extends Component {
@@ -16,11 +17,19 @@ class Header extends Component {
           <img src={ `https://www.gravatar.com/avatar/${md5(gravatarEmail).toString()}` } data-testid="header-profile-picture" alt="avatar" />
           <span data-testid="header-player-name">{ name.slice(0, maxDisplayLenght) }</span>
         </div>
-        <div>
+        <div className="Score-container">
           <strong>Score:</strong>
           <span className="Score" data-testid="header-score">{ score }</span>
         </div>
-        { isGameScreen && <NextButton history={ history } /> }
+        <div className="Header-buttons-container">
+          { isGameScreen && <NextButton history={ history } /> }
+          <button
+            onClick={ () => history.push('/game/settings') }
+            className="Header-settingsicon"
+          >
+            <RiSettings4Fill />
+          </button>
+        </div>
       </header>
     );
   }
