@@ -26,6 +26,7 @@ We had to develop a Trivia game React application fetching for question data fro
 
 * HTML5
 * CSS3
+* Sass
 * JavaScript ES6+
 * React.js
 * React Router
