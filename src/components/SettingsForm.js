@@ -1,12 +1,8 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-// import { MdEmail } from "react-icons/md";
-// import { RiGameFill, RiUser3Fill } from "react-icons/ri";
 import { connect } from 'react-redux';
 import { actionUpdateSettings, actionResetGame, actionGetToken } from '../redux/actions';
-// import trivia from "../assets/imgs/trivia.png";
-// import { actionGetToken, actionUpdatePlayerData } from "../redux/actions";
-import '../sass/components/LoginForm.css';
+import '../sass/components/SettingsForm.css';
 
 class SettingsForm extends Component {
   constructor() {

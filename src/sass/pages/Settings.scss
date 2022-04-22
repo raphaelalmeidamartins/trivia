@@ -1,0 +1,29 @@
+@import '../abstracts/_gradients';
+
+.Settings {
+  align-items: center;
+  background-image: $gradient-five;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.Settings-wave {
+  bottom: 0;
+  opacity: 0.8;
+  position: fixed;
+  width: 100%;
+  z-index: 0;
+}
+
+.Settings-wave-upsidedown {
+  opacity: 0.2;
+  position: fixed;
+  top: 0;
+  transform: rotate(180deg);
+  width: 100%;
+  z-index: 0;
+}

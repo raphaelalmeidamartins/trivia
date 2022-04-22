@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import SettingsForm from '../components/SettingsForm';
-// import '../sass/pages/Settings.css';
+import '../sass/pages/Settings.css';
+import wave from '../assets/imgs/wave.svg';
 
 class Settings extends Component {
   render() {
@@ -10,6 +11,8 @@ class Settings extends Component {
     return (
       <main className="Settings">
         <SettingsForm history={ history } />
+        <img className="Settings-wave" src={ wave } alt="" />
+        <img className="Settings-wave-upsidedown" src={ wave } alt="" />
       </main>
     );
   }
