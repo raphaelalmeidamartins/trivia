@@ -1,15 +1,24 @@
 import React, { Component } from 'react';
-import '../sass/pages/Settings.css';
+import PropTypes from 'prop-types';
+import SettingsForm from '../components/SettingsForm';
+// import '../sass/pages/Settings.css';
 
 class Settings extends Component {
   render() {
+    const { history } = this.props;
+
     return (
       <main className="Settings">
-        <h1 data-testid="settings-title">Settings</h1>
-        <p>This page is currently under development</p>
+        <SettingsForm history={ history } />
       </main>
     );
   }
 }
+
+Settings.propTypes = {
+  history: PropTypes.shape({
+    push: PropTypes.func.isRequired,
+  }).isRequired,
+};
 
 export default Settings;

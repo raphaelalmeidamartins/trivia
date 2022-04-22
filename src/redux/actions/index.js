@@ -11,6 +11,7 @@ const FINAL_ROUND = 'FINAL_ROUND';
 const GET_RANKING = 'GET_RANKING';
 const RESET_GAME = 'RESET_GAME';
 const RESET_PLAYER = 'RESET_PLAYER';
+const UPDATE_SETTINGS = 'UPDATE_SETTINGS';
 
 function actionGetQuestions(token) {
   return async (dispatch) => {
@@ -88,6 +89,13 @@ function actionResetPlayer() {
   }
 }
 
+function actionUpdateSettings(settings) {
+  return {
+    type: UPDATE_SETTINGS,
+    settings,
+  }
+}
+
 export {
   actionGetToken,
   GET_TOKEN,
@@ -109,4 +117,6 @@ export {
   actionResetGame,
   RESET_PLAYER,
   actionResetPlayer,
+  UPDATE_SETTINGS,
+  actionUpdateSettings,
 };
