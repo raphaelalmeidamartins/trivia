@@ -44,3 +44,5 @@ We had to develop a Trivia game React application fetching for question data fro
 ### :copyright: Copyright disclaimer
 
 We developed this project for learning purposes, all the code and documentation texts are our authorship, and the rights belong exclusively to us. It is allowed to download or clone the repository for study purposes. However, it is not allowed to publish full or partial copies. This disclaimer does not cover libraries and dependencies, which are subject to their respective licenses.
+
+We use the [Open Trivia Database](https://opentdb.com/) API to fetch the recipes' data.
