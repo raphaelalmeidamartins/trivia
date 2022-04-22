@@ -1,7 +1,7 @@
 import { UPDATE_SETTINGS } from "../actions";
 
 const INITIAL_STATE = {
-  amount: 5,
+  amount: '5',
   category: '',
   difficulty: '',
   type: '',

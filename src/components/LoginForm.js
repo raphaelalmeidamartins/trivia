@@ -28,9 +28,9 @@ class LoginForm extends Component {
   };
 
   handleSubmit = () => {
-    const { requestToken, updatePlayerData } = this.props;
+    const { requestToken, updatePlayerData, settings } = this.props;
     const { name, gravatarEmail } = this.state;
-    requestToken();
+    requestToken(settings);
     updatePlayerData({ name, gravatarEmail });
     this.setState({ redirect: true });
   }
@@ -97,12 +97,17 @@ class LoginForm extends Component {
   }
 }
 
+const mapStateToProps = (state) => ({
+  settings: state.settings,
+})
+
 const mapDispatchToProps = (dispatch) => ({
-  requestToken: () => dispatch(actionGetToken()),
+  requestToken: (settings) => dispatch(actionGetToken(settings)),
   updatePlayerData: (state) => dispatch(actionUpdatePlayerData(state)),
 });
 
 LoginForm.propTypes = {
+  settings: PropTypes.objectOf(PropTypes.string),
   requestToken: PropTypes.func.isRequired,
   updatePlayerData: PropTypes.func.isRequired,
   history: PropTypes.shape({
@@ -110,4 +115,4 @@ LoginForm.propTypes = {
   }).isRequired,
 };
 
-export default connect(null, mapDispatchToProps)(LoginForm);
+export default connect(mapStateToProps, mapDispatchToProps)(LoginForm);

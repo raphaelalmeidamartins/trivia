@@ -13,9 +13,9 @@ const RESET_GAME = 'RESET_GAME';
 const RESET_PLAYER = 'RESET_PLAYER';
 const UPDATE_SETTINGS = 'UPDATE_SETTINGS';
 
-function actionGetQuestions(token) {
+function actionGetQuestions(token, settings) {
   return async (dispatch) => {
-    const questions = await getQuestions(token);
+    const questions = await getQuestions(token, settings);
     dispatch({
       type: GET_QUESTIONS,
       questions,
@@ -23,14 +23,14 @@ function actionGetQuestions(token) {
   };
 }
 
-function actionGetToken() {
+function actionGetToken(settings) {
   return async (dispatch) => {
     const token = await getToken();
     dispatch({
       type: GET_TOKEN,
       token,
     });
-    dispatch(actionGetQuestions(token));
+    dispatch(actionGetQuestions(token, settings));
   };
 }
 

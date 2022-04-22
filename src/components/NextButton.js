@@ -7,10 +7,9 @@ import '../sass/components/NextButton.css';
 
 class NextButton extends Component {
   handleClick = () => {
-    const { round, goToNextRound, history, playerRecord, recordPlayerData } = this.props;
-    const finalRound = 4;
-    if (round < finalRound) goToNextRound();
-    if (round === finalRound) {
+    const { round, questions, goToNextRound, history, playerRecord, recordPlayerData } = this.props;
+    if (round < questions.length) goToNextRound();
+    if (round === questions.length) {
       recordPlayerData(playerRecord);
       history.push('/game/results');
     }
@@ -39,6 +38,7 @@ class NextButton extends Component {
 
 const mapStateToProps = (state) => ({
   round: state.game.round,
+  questions: state.game.questions,
   questionChosen: state.game.questionChosen,
   playerRecord: state.player,
 });
@@ -50,6 +50,7 @@ const mapDispatchToProps = (dispatch) => ({
 
 NextButton.propTypes = {
   round: PropTypes.number.isRequired,
+  questions: PropTypes.arrayOf(PropTypes.object),
   goToNextRound: PropTypes.func.isRequired,
   history: PropTypes.objectOf(PropTypes.any).isRequired,
   questionChosen: PropTypes.bool.isRequired,

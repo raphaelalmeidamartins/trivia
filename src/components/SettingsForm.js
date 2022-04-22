@@ -28,7 +28,7 @@ class SettingsForm extends Component {
     const { history, updateSettings, resetGame, requestToken } = this.props;
     updateSettings(this.state);
     resetGame();
-    requestToken();
+    requestToken(this.state);
     history.push('/game');
   };
 
@@ -124,7 +124,7 @@ class SettingsForm extends Component {
 const mapDispatchToProps = (dispatch) => ({
   updateSettings: (state) => dispatch(actionUpdateSettings(state)),
   resetGame: () => dispatch(actionResetGame()),
-  requestToken: () => dispatch(actionGetToken()),
+  requestToken: (settings) => dispatch(actionGetToken(settings)),
 });
 
 SettingsForm.propTypes = {

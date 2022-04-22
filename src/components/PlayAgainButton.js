@@ -6,9 +6,9 @@ import { actionResetGame, actionGetToken } from '../redux/actions';
 
 class PlayAgainButton extends React.Component {
   handleClick = () => {
-    const { resetGame, requestToken, history } = this.props;
+    const { resetGame, requestToken, history, settings } = this.props;
     resetGame();
-    requestToken();
+    requestToken(settings);
     history.push('/game');
   };
 
@@ -28,14 +28,17 @@ class PlayAgainButton extends React.Component {
 
 const mapStateToProps = (state) => ({
   token: state.token,
+  settings: state.settings,
 });
 
 const mapDispatchToProps = (dispatch) => ({
   resetGame: () => dispatch(actionResetGame()),
-  requestToken: () => dispatch(actionGetToken()),
+  requestToken: (settings) => dispatch(actionGetToken(settings)),
 });
 
 PlayAgainButton.propTypes = {
+  token: PropTypes.string.isRequired,
+  settings: PropTypes.objectOf(PropTypes.string),
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,
   }).isRequired,

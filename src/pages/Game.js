@@ -10,8 +10,8 @@ import { actionGetToken } from '../redux/actions';
 
 class Game extends Component {
   componentDidMount() {
-    const { questions, requestToken } = this.props;
-    if (!questions) requestToken();
+    const { questions, requestToken, settings } = this.props;
+    if (!questions) requestToken(settings);
   }
 
   shuffleAnswers = (currQuestion) => {
@@ -42,6 +42,7 @@ class Game extends Component {
 }
 
 const mapStateToProps = (state) => ({
+  settings: state.settings,
   questions: state.game.questions,
   currRound: state.game.round,
   playerName: state.player.name,
@@ -52,6 +53,7 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 Game.propTypes = {
+  settings: PropTypes.objectOf(PropTypes.string).isRequired,
   questions: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.object),
     PropTypes.bool,
