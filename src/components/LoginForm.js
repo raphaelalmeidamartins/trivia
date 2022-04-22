@@ -91,6 +91,7 @@ class LoginForm extends Component {
           <span>Play</span>
         </button>
         <SettingsButton history={ history } />
+        <p>Powered by <a href="https://opentdb.com/">Open Trivia Database</a></p>
       </form>
     );
   }
