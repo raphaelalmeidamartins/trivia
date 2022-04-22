@@ -28,10 +28,10 @@ class LoginForm extends Component {
   };
 
   handleSubmit = () => {
-    const { requestToken, updatePlayerDate } = this.props;
+    const { requestToken, updatePlayerData } = this.props;
     const { name, gravatarEmail } = this.state;
     requestToken();
-    updatePlayerDate({ name, gravatarEmail });
+    updatePlayerData({ name, gravatarEmail });
     this.setState({ redirect: true });
   }
 
@@ -99,12 +99,12 @@ class LoginForm extends Component {
 
 const mapDispatchToProps = (dispatch) => ({
   requestToken: () => dispatch(actionGetToken()),
-  updatePlayerDate: (state) => dispatch(actionUpdatePlayerData(state)),
+  updatePlayerData: (state) => dispatch(actionUpdatePlayerData(state)),
 });
 
 LoginForm.propTypes = {
   requestToken: PropTypes.func.isRequired,
-  updatePlayerDate: PropTypes.func.isRequired,
+  updatePlayerData: PropTypes.func.isRequired,
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,
   }).isRequired,
