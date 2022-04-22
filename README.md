@@ -31,6 +31,7 @@ We had to develop a Trivia game React application fetching for question data fro
 * React.js
 * React Router
 * Redux
+* Redux thunk
 * React Icons (icon library)
 * GitHub Pages
 
