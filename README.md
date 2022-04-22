@@ -10,15 +10,6 @@ We had to develop a Trivia game React application fetching for question data fro
 
 [Click here](https://raphaelalmeidamartins.github.io/trivia/) to check out the final version of the project on your browser.
 
-### Note
-
-This project is still under development. We are implementing a few more features and the mobile version.
-
-### In progress
-
-- [ ] Mobile version
-- [ ] Settings page
-
 ## :memo: Methodologies
 
 * Kanban
@@ -44,7 +35,7 @@ This project is still under development. We are implementing a few more features
 
 ## :iphone: Mobile version
 
-_Under development_
+![Mobile preview](./imgs/mobile-preview.png)
 
 ## :trophy: Grade
 
