@@ -1,6 +1,6 @@
-@import '../abstracts/_colors';
-@import '../abstracts/_radius';
-@import '../abstracts/_mixins';
+@import "../abstracts/_colors";
+@import "../abstracts/_radius";
+@import "../abstracts/_mixins";
 
 .LoginForm {
   @include box(center);
@@ -16,7 +16,7 @@
     border: 1px solid $divider-color;
     border-radius: $input-buttons-radius;
     color: $text-icons;
-    font-family: Play , sans-serif;
+    font-family: Play, sans-serif;
     font-size: 1rem;
     padding: 0.8rem 1.2rem 0.8rem 2.5rem;
   }
@@ -28,7 +28,15 @@
 
   button {
     @include button($accent-color, 1rem, 100%);
-  }  
+  }
+
+  p {
+    margin-top: 2rem;
+
+    a {
+      text-decoration: none;
+    }
+  }
 }
 
 .LoginForm-logo {
