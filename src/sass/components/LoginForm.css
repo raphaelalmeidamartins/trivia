@@ -67,6 +67,10 @@
           filter: brightness(120%);
 }
 
+.LoginForm button span {
+  margin-left: 0.5rem;
+}
+
 .LoginForm p {
   margin-top: 2rem;
 }

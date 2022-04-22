@@ -10,8 +10,6 @@ const getQuestions = async (token, { amount, category, difficulty, type }) => {
   const selDifficulty = difficulty !== '' ? `&difficulty=${difficulty}` : '';
   const selType = type !== '' ? `&type=${type}` : '';
 
-  console.log(`${endpoint}${selCategory}${selDifficulty}${selType}&token=${token}`);
-
   const response = await fetch(`${endpoint}${selCategory}${selDifficulty}${selType}&token=${token}`);
   const question = await response.json();
   const errorCode = 3;

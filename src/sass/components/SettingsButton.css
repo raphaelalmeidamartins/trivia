@@ -1,0 +1,35 @@
+.SettingsButton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #efc82c;
+  border: 1px solid #131313;
+  border-radius: 0.6rem;
+  color: #131313;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.SettingsButton:disabled {
+  opacity: 0.5;
+}
+
+.SettingsButton:hover:not(:disabled) {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.SettingsButton span {
+  margin-left: 0.5rem;
+}
+/*# sourceMappingURL=SettingsButton.css.map */

@@ -8,8 +8,8 @@ import '../sass/components/NextButton.css';
 class NextButton extends Component {
   handleClick = () => {
     const { round, questions, goToNextRound, history, playerRecord, recordPlayerData } = this.props;
-    if (round < questions.length) goToNextRound();
-    if (round === questions.length) {
+    if (round < questions.length - 1) goToNextRound();
+    if (round === questions.length - 1) {
       recordPlayerData(playerRecord);
       history.push('/game/results');
     }

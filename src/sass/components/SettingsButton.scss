@@ -1,0 +1,10 @@
+@import '../abstracts/_colors';
+@import '../abstracts/_mixins';
+
+.SettingsButton {
+  @include button($accent-color, 1rem, 100%);
+
+  span {
+    margin-left: 0.5rem;
+  }
+}

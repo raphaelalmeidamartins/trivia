@@ -28,6 +28,10 @@
 
   button {
     @include button($accent-color, 1rem, 100%);
+
+    span {
+      margin-left: 0.5rem;
+    }
   }
 
   p {
