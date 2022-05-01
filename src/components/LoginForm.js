@@ -92,6 +92,7 @@ class LoginForm extends Component {
         </button>
         <SettingsButton history={ history } />
         <p>Powered by <a href="https://opentdb.com/">Open Trivia Database</a></p>
+        <p>Some SVG Backgrounds by <a target="_blank" rel="noreferrer" href="https://bgjar.com">BGJar</a></p>
       </form>
     );
   }

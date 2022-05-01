@@ -35,7 +35,13 @@
   }
 
   p {
-    margin-top: 2rem;
+    &:not(:last-child) {
+      margin-top: 2rem;
+    }
+
+    &:last-child {
+      margin-top: 0.5rem;
+    }
 
     a {
       text-decoration: none;

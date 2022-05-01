@@ -71,8 +71,12 @@
   margin-left: 0.5rem;
 }
 
-.LoginForm p {
+.LoginForm p:not(:last-child) {
   margin-top: 2rem;
+}
+
+.LoginForm p:last-child {
+  margin-top: 0.5rem;
 }
 
 .LoginForm p a {
