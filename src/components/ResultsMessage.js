@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import won from '../assets/imgs/win.png';
+import won from '../assets/imgs/victory.png';
 import lose from '../assets/imgs/lose.png';
 import '../sass/components/ResultsMessage.css';
 

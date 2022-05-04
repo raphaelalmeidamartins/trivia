@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import rankingPic from '../assets/imgs/ranking.png';
+import rankingPic from '../assets/imgs/podium.png';
 import wave from '../assets/imgs/wave.svg';
 import HomeButton from '../components/HomeButton';
 import IndividualRanking from '../components/IndividualRanking';

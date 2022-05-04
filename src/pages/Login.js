@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import controller from '../assets/imgs/controller.png';
+import controller from '../assets/imgs/controller-redesign.png';
 import LoginForm from '../components/LoginForm';
 import '../sass/pages/Login.css';
 import wave from '../assets/imgs/wave.svg';

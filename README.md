@@ -1,6 +1,6 @@
 # :interrobang: Trivia :brain:
 
-![Desktop preview](./imgs/preview.png)
+![Desktop preview](./imgs/preview2.png)
 
 ## :page_with_curl: About
 
