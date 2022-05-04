@@ -28,7 +28,7 @@
 @mixin box($align) {
   align-items: $align;
   background-color: $primary-color;
-  border: 5px solid $text-icons;
+  border: 4px solid $text-icons;
   border-radius: $container-radius;
   display: flex;
   flex-flow: column nowrap;
