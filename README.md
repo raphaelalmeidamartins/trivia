@@ -21,7 +21,7 @@ We had to develop a Trivia game React application fetching for question data fro
 
 Projeto React em grupo desenvolvido por [Raphael Martins](https://www.linkedin.com/in/raphaelameidamartins/), [Vitória Holanda](https://www.linkedin.com/in/vit%C3%B3ria-holanda-500a32215/), [Thais Kotovicz](https://www.linkedin.com/in/thaiskotovicz/), [Lucas Cabral](https://www.linkedin.com/in/lucas-cabral-0a2678221/) e [Elisa Taborda](https://www.linkedin.com/in/elisa-taborda-62b0b6221/) ao final do Bloco 16 ([Módulo Desenvolvimento Front-end](https://github.com/raphaelalmeidamartins/trybe_exercicios/tree/main/2_Desenvolvimento-Front-end)) do curso de Desenvolvimento Web da Trybe. Fomos aprovados com 100% dos requisitos obrigatórios e opcionais atingidos.
 
-Tivemos que desenvolver uma aplicação React de jogo de Trivia recebendo dados de perguntas de uma API pública. Também precisamos organizar o desenvolvimento utilizando metodologias ágeis como Scrum e Kanban.
+Tivemos que desenvolver uma aplicação React de jogo de Trivia recebendo dados de perguntas de uma API pública. Também tivemos que organizar o desenvolvimento utilizando metodologias ágeis como Scrum e Kanban.
 
 [Clique aqui](https://raphaelalmeidamartins.github.io/trivia/) para conferir a versão final do projeto no seu navegador.
 
