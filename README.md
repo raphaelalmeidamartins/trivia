@@ -4,12 +4,6 @@
 
 ## :page_with_curl: About/Sobre
 
-React group project developed by [Raphael Martins](https://www.linkedin.com/in/raphaelameidamartins/), [Vitória Holanda](https://www.linkedin.com/in/vit%C3%B3ria-holanda-500a32215/), [Thais Kotovicz](https://www.linkedin.com/in/thaiskotovicz/), [Lucas Cabral](https://www.linkedin.com/in/lucas-cabral-0a2678221/), [Elisa Taborda](https://www.linkedin.com/in/elisa-taborda-62b0b6221/) at the end of Unit 16 ([Front-end Development Module](https://github.com/raphaelalmeidamartins/trybe_exercicios/tree/main/2_Desenvolvimento-Front-end)) of Trybe's Web Development course. We were approved with 100% of the mandatory and optional requirements met.
-
-We had to develop a Trivia game React application fetching for question data from a public API. We also had to use agile methologies such as Scrum and Kanban.
-
-[Click here](https://raphaelalmeidamartins.github.io/trivia/) to check out the final version of the project on your browser.
-
 <details>
   <summary markdown="span"><strong>:us: English</strong></summary><br />
 
