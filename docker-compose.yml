@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  frontend:
+    container_name: trivia
+    build: .
+    ports:
+      - 3000:3000
+    platform: linux/x86_64
+    working_dir: /app
+    volumes:
+     - ./src:/app/src
+     - ./build:/app/build
+     - ./public:/app/public
+     - ./cypress:/app/cypress
+     - ./package-lock.json:/app/package-lock.json
+     - ./package.json:/app/package.json
+     - ./README.md:/app/README.md
+    healthcheck:
+      test: ["CMD", "lsof", "-t", "-i:3000"]
+      timeout: 10s
+      retries: 5
