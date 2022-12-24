@@ -3,7 +3,7 @@
 @import '../abstracts/_mixins';
 
 .Question {
-  @include box(strech);
+  @include box(stretch);
   max-width: 90vw;
   transition: 400ms;
   width: 600px;
@@ -22,22 +22,22 @@
     display: flex;
     flex-flow: column nowrap;
   }
-}
 
-.Question-loading-bubble {
-  height: 200px;
-  margin: 0 auto;
-  width: 200px;
-}
-
-.Question-option {
-  @include button($accent-color, 1rem, 100%);
-}
-
-.Question-wrong {
-  background-color: $secondary-color-pink;
-}
-
-.Question-right {
-  background-color: $secondary-color-cyan;
+  .Question__loading-bubble {
+    height: 200px;
+    margin: 0 auto;
+    width: 200px;
+  }
+  
+  .Question__option {
+    @include button($accent-color, 1rem, 100%);
+  }
+  
+  .Question__wrong {
+    background-color: $secondary-color-pink;
+  }
+  
+  .Question__right {
+    background-color: $secondary-color-cyan;
+  }
 }

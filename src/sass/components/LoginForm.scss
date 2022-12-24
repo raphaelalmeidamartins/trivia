@@ -47,20 +47,20 @@
       text-decoration: none;
     }
   }
-}
 
-.LoginForm-logo {
-  margin-bottom: 2rem;
-  width: 200px;
-}
-
-.LoginForm-icon {
-  align-items: center;
-  color: $divider-color;
-  display: flex;
-  justify-content: center;
-  left: 0.8rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  .LoginForm__logo {
+    margin-bottom: 2rem;
+    width: 200px;
+  }
+  
+  .LoginForm__icon {
+    align-items: center;
+    color: $divider-color;
+    display: flex;
+    justify-content: center;
+    left: 0.8rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
