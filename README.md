@@ -1,6 +1,6 @@
 # :interrobang: Trivia :brain:
 
-![Desktop preview](./imgs/preview.png)
+![Desktop preview](./images/preview.png)
 
 ## :page_with_curl: About/Sobre
 
@@ -60,21 +60,20 @@ Tivemos que desenvolver uma aplicação React de jogo de Trivia recebendo dados 
 * HTML5
 * CSS3
 * Sass
-* JavaScript ES6+
+* TypeScript
 * React.js
 * React Router
 * Redux
-* Redux thunk
 * React Icons (icon library)
 * GitHub Pages
 
 ## :iphone: Mobile version/Versão mobile
 
-![Mobile preview](./imgs/mobile-preview.png)
+![Mobile preview](./images/mobile-preview.png)
 
 ## :trophy: Grade/Nota
 
-![My grade of the project - Minha nota no projeto](./imgs/nota.png)
+![My grade of the project - Minha nota no projeto](./images/nota.png)
 
 ### :copyright: Copyright disclaimer/Aviso de direitos autorais
 
